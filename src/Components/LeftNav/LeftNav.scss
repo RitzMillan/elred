@@ -1,0 +1,50 @@
+@import '../../colorpallet.scss';
+
+.leftnav-container {
+    // height: calc(100vh - 105px);
+    width: 13vw;
+    border: none;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color: $white;
+
+    .leftnav-head {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+
+        .at-avatar {
+            height: 40px;
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+    }
+
+    .nav-items-container {
+        margin-top: 60px;
+
+        .item {
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            .icon {
+                height: 22px;
+                margin-left: 10px;
+                margin-right: 20px;
+            }
+        }
+
+        .selected-item {
+            background-color: $lignt_red;
+        }
+    }
+
+}

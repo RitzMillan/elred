@@ -1,0 +1,90 @@
+//Color pallet
+$white: #ffffff;
+$red: #e72d38;
+$dark_red: #be212a;
+$lignt_red: #fdebeb;
+$bground: #eceff6;
+$input_bg: #eff1f8;
+$grey: #ced1d7;
+$dark_grey: #988197;
+$bluish_grey: #bdc2da;
+
+//font colors
+.text-grey {
+    color: $dark_grey;
+}
+
+.text-red {
+    color: $dark_red;
+}
+
+// font sizes
+.f-10 {
+    font-size: 10px;
+}
+
+.f-12 {
+    font-size: 12px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-22 {
+    font-size: 22px;
+}
+
+// Buttons
+.btn-outline {
+    height: 35px;
+    width: 200px;
+    font-weight: bold;
+    color: $dark_red;
+    background-color: $white;
+    border-radius: 5px;
+    border: 2px solid $red;
+    padding: 5px 15px;
+    margin-top: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    height: 35px;
+    width: 200px;
+    font-weight: bold;
+    color: $white;
+    background-color: $dark_red;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    margin-top: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.btn-small {
+    height: 35px;
+    width: 140px;
+    font-weight: bold;
+    background-color: $white;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px 15px;
+}
+
+.btn-primary-small {
+    height: 35px;
+    width: 140px;
+    font-weight: bold;
+    color: $white;
+    background-color: $dark_red;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+}

@@ -1,0 +1,91 @@
+@import '../../colorpallet.scss';
+
+.Nav-container {
+    height: 55px;
+    background-color: $white;
+    display: flex;
+
+    .left {
+        height: 55px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+
+        .logo {
+            height: 30px;
+            margin-left: 50px;
+        }
+    
+        .search { 
+            position: relative; 
+            margin-left: 30px;
+    
+            input {
+                height: 30px;
+                width: 350px;
+                text-indent: 35px;
+                border-radius: 5px;
+                border: none;
+                background-color: $input_bg;
+            }
+
+            .fa {
+                height: 20px;
+            }
+    
+            .fa-search { 
+                position: absolute;
+                top: 5px;
+                left: 8px;
+                // font-size: 15px;
+    
+            }
+    
+            ::placeholder{
+                color: $dark_grey;
+            }
+    
+        }
+    }
+
+    .right {
+        height: 55px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .avatar-logo-wraper {
+            display: flex;
+            margin-right: 30px;
+
+            .avatar-logo {
+                height: 30px;
+            }
+
+            .dropdown {
+                margin-left: 10px;
+            }
+        }
+
+        .avatar-wraper {
+            display: flex;
+            margin-right: 50px;
+
+            .avatar {
+                height: 34px;
+            }
+
+            .avatar-text {
+                margin-left: 10px;
+            }
+
+            .dropdown {
+                margin-left: 10px;
+            }
+
+        }
+    }
+}

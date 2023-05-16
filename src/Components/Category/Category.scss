@@ -1,0 +1,27 @@
+@import '../../colorpallet.scss';
+
+
+.category-box-container {
+    height: 120px;
+    width: 120px;
+    mask-image: linear-gradient (black, transparent);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 25px 10px;
+    transform: rotate(90deg);
+
+    .bgimg {
+        height: 120px;
+        width: 120px;
+        background-size: cover;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .category-name {
+        position: absolute;
+        bottom: 5px;
+        color: $white;
+    }
+}
