@@ -1,216 +1,224 @@
 @import '../../colorpallet.scss';
 
-.popup-container {
+.popup-container-wraper {
     height: 100vh;
-    width: 72vw;
-    background-color: $white;
-    box-shadow: -4px 0px 24px rgba(0, 0, 0, 0.15);
+    width: 100vw;
+    // background-color: aqua;
     position: absolute;
-    top: -80px;
-    right: -410px;
-    z-index: 99;
-    display: flex;
+    z-index: 95;
+    top: -86px;
+    left: -240px;
 
-    .left {
-        height: inherit;
-        width: 55%;
-        // background-color: bisque;
+    .popup-container {
+        height: 100vh;
+        width: 72vw;
+        background-color: $white;
+        box-shadow: -4px 0px 24px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        right: 0;
 
-        .header {
-            height: 50px;
-            padding-top: 20px;
-            padding-left: 50px;
-            background-color: white;
-        }
-
-        .left-body-container {
-            height: calc(100vh - 90px);
-            overflow-y: scroll;
-
-            .left-body {
-                margin-left: 50px;
-
-                .big-product-img {
-                    height: 300px;
-                    width: 500px;
-                    margin-bottom: 20px;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    position: relative;
-
-                    .heart {
-                        position: absolute;
-                        right: 10px;
-                        top: 10px;
-
-                    }
-                }
-
-                .name-price {
-                    width: 500px;
-                    margin-top: 10px;
-                    display: flex;
-                    justify-content: space-between;
-                }
-
-                .product-description-text {
-                    width: 500px;
-                    margin-top: 10px;
-                }
-
-                .color-description {
-                    margin-top: 20px;
-                    font-weight: 600;
-                }
-
-                .cell-container {
-                    width: 500px;
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-
-                .qty-input {
-                    height: 30px;
-                    width: 350px;
-                    margin-top: 10px;
-                    margin-bottom: 4px;
-                    text-indent: 10px;
-                    border-radius: 5px;
-                    border: none;
-                    background-color: $input_bg;
-                }
-
-                .checkbox {
-                    display: block;
-                    position: relative;
-                    padding-left: 20px;
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    // cursor: pointer;
-                    font-size: 14px;
-                    -webkit-user-select: none;
-                    -moz-user-select: none;
-                    -ms-user-select: none;
-                    user-select: none;
-
-                    input {
-                        position: absolute;
-                        opacity: 0;
-                        // cursor: pointer;
-                        height: 0;
-                        width: 0;
-
-                        &:checked ~ .checkmark {
-                            background-color: $red;
-                        }
-
-                        &:checked ~ .checkmark:after {
-                            display: block;
-                        }
-                    }
-
-                    .checkmark {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        height: 15px;
-                        width: 15px;
-                        background-color: #eee;
-
-                        &:after {
-                            content: "";
+        z-index: 99;
+        display: flex;
+    
+        .left {
+            height: inherit;
+            width: 55%;
+            // background-color: bisque;
+    
+            .header {
+                height: 50px;
+                padding-top: 20px;
+                padding-left: 50px;
+                background-color: white;
+            }
+    
+            .left-body-container {
+                height: calc(100vh - 90px);
+                overflow-y: scroll;
+    
+                .left-body {
+                    margin-left: 50px;
+    
+                    .big-product-img {
+                        height: 300px;
+                        width: 500px;
+                        margin-bottom: 20px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        position: relative;
+    
+                        .heart {
                             position: absolute;
-                            display: none;
-                        }
-
-                        &:after {
-                            left: 4px;
-                            top: 0px;
-                            width: 5px;
-                            height: 10px;
-                            border: solid white;
-                            border-width: 0 3px 3px 0;
-                            -webkit-transform: rotate(45deg);
-                            -ms-transform: rotate(45deg);
-                            transform: rotate(45deg);
+                            right: 10px;
+                            top: 10px;
+    
                         }
                     }
+    
+                    .name-price {
+                        width: 500px;
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+    
+                    .product-description-text {
+                        width: 500px;
+                        margin-top: 10px;
+                    }
+    
+                    .color-description {
+                        margin-top: 20px;
+                        font-weight: 600;
+                    }
+    
+                    .cell-container {
+                        width: 500px;
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+    
+                    .qty-input {
+                        height: 30px;
+                        width: 350px;
+                        margin-top: 10px;
+                        margin-bottom: 4px;
+                        text-indent: 10px;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: $input_bg;
+                    }
+    
+                    .checkbox {
+                        display: block;
+                        position: relative;
+                        padding-left: 20px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        // cursor: pointer;
+                        font-size: 14px;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+    
+                        input {
+                            position: absolute;
+                            opacity: 0;
+                            // cursor: pointer;
+                            height: 0;
+                            width: 0;
+    
+                            &:checked ~ .checkmark {
+                                background-color: $red;
+                            }
+    
+                            &:checked ~ .checkmark:after {
+                                display: block;
+                            }
+                        }
+    
+                        .checkmark {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 15px;
+                            width: 15px;
+                            background-color: #eee;
+    
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                display: none;
+                            }
+    
+                            &:after {
+                                left: 4px;
+                                top: 0px;
+                                width: 5px;
+                                height: 10px;
+                                border: solid white;
+                                border-width: 0 3px 3px 0;
+                                -webkit-transform: rotate(45deg);
+                                -ms-transform: rotate(45deg);
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+    
+                    .button-wraper {
+                        width: 500px;
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 40px;
+                    }
                 }
-
-                .button-wraper {
-                    width: 500px;
-                    display: flex;
-                    justify-content: center;
-                    margin-bottom: 40px;
+            }
+        }
+    
+        .v-divider {
+            height: calc(100vh - 50px);
+            border: 1px dashed $grey;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    
+        .right {
+            height: inherit;
+            width: 45%;
+            // background-color: bisque;
+    
+            .header {
+                height: 50px;
+                width: 410px;
+                padding-top: 20px;
+                padding-left: 50px;
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+                // background-color: aqua;
+    
+                img {
+                    height: 30px;
+                    cursor: pointer;
                 }
             }
+    
+            .header-two {
+                height: 35px;
+                width: 460px;
+                display: flex;
+                align-items: center;
+                background-color: $grey;
+    
+                .pro {
+                    margin-left: 70px;
+                }
+    
+                .qty {
+                    margin-left: 120px;
+                }
+    
+                .pri {
+                    margin-left: 40px;
+                }
+            }
+    
+            .cartitems-wraper {
+                width: 420px;
+                height: 500px;
+                padding-left: 40px;
+                overflow-y: scroll;
+            }
+    
+            .btn-container {
+                width: 460px;
+                display: flex;
+                justify-content: center;
+            }
         }
     }
-
-    .v-divider {
-        height: calc(100vh - 50px);
-        border: 1px dashed $grey;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-
-    .right {
-        height: inherit;
-        width: 45%;
-        // background-color: bisque;
-
-        .header {
-            height: 50px;
-            width: 410px;
-            padding-top: 20px;
-            padding-left: 50px;
-            background-color: white;
-            display: flex;
-            justify-content: space-between;
-            // background-color: aqua;
-
-            img {
-                height: 30px;
-                cursor: pointer;
-            }
-        }
-
-        .header-two {
-            height: 35px;
-            width: 460px;
-            display: flex;
-            align-items: center;
-            background-color: $grey;
-
-            .pro {
-                margin-left: 70px;
-            }
-
-            .qty {
-                margin-left: 120px;
-            }
-
-            .pri {
-                margin-left: 40px;
-            }
-        }
-
-        .cartitems-wraper {
-            width: 420px;
-            height: 500px;
-            padding-left: 40px;
-            overflow-y: scroll;
-        }
-
-        .btn-container {
-            width: 460px;
-            display: flex;
-            justify-content: center;
-        }
-    }
-
-
 }
 
 .cell-wraper {
