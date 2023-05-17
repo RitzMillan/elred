@@ -5,7 +5,7 @@ import heart from "../../Assets/Icons/heart.svg";
 import close from "../../Assets/Icons/x.svg";
 import { CartItems } from "../Cart/Cart";
 import { useDispatch } from "react-redux";
-import {addToCart} from '../../Store/addToCartAction'
+import { addToCart } from "../../Store/addToCartAction";
 
 function Popup(props) {
   const img = props.item.productImages[0];
@@ -20,11 +20,11 @@ function Popup(props) {
   }
 
   function handleAddToCart() {
-    dispatch(addToCart(orderList))
+    dispatch(addToCart(orderList));
   }
 
   function handlePopupClose() {
-    props.setPopup(false)
+    props.setPopup(false);
   }
 
   console.warn("popup opened", props);
@@ -98,7 +98,7 @@ function Popup(props) {
             <p className="f-22">
               <b>Order List</b>
             </p>
-            <img src={close} alt="close" onClick={handlePopupClose}/>
+            <img src={close} alt="close" onClick={handlePopupClose} />
           </div>
           <div className="header-two">
             <p className="pro">Products</p>
@@ -125,7 +125,7 @@ export function Cell1(props) {
   return (
     <>
       <div className="cell-wraper">
-        <p className="cell-name">{props.item.colorDescription}</p>
+        <div className="cell-name selected-cell" tabIndex={1}>{props.item.colorDescription}</div>
       </div>
     </>
   );
@@ -135,7 +135,7 @@ export function Cell2(props) {
   return (
     <>
       <div className="cell-wraper">
-        <p className="cell-name">{props.item.packingDescription}</p>
+        <div className="cell-name selected-cell" tabIndex={1}>{props.item.packingDescription}</div>
       </div>
     </>
   );

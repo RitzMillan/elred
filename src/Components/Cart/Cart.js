@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 function Cart() {
   const addToCartData = useSelector((state) => state.addToCartData);
 
-  console.warn("cart length",addToCartData.length)
+  console.warn("cart data",addToCartData)
 
   return (
     <>

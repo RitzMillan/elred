@@ -22,7 +22,7 @@ function Product1(props) {
 
   return (
     <>
-      <div className="product-container" onClick={handleClick}>
+      <div className="product-container selected-border" onClick={handleClick} tabIndex={1}>
         <img src={heart} alt="like" className="heart" />
         <div className="img-container">
           <img src={productImg} alt="product" className="product-img" />

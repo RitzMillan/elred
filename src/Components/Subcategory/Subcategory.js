@@ -16,7 +16,7 @@ function Subcategory1(props) {
 
   return (
     <>
-      <div className="subcategory-box-container" onClick={handleSubcategoryClick}>
+      <div className="subcategory-box-container selected-border" onClick={handleSubcategoryClick} tabIndex={1}>
         <div
           style={{
             backgroundImage: `url(${props.item.subCategoryImageURL !== "" ? props.item.subCategoryImageURL :subcategory_image})`,
